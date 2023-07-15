@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Тестирование LocalStorage и его события storage</title>
+</head>
+
+<body>
+    <h1>Тестирование LocalStorage и его события storage</h1>
+    <p>Текущие значение</p>
+    <p class="keyOne"></p>
+    <p class="keyTwo"></p>
+    <button type="button" class="btnClear">Очистить</button>
+
+    <label class="label">
+        <input type="checkbox" name="check" id="check">
+        Включить отслеживание за событием storage
+    </label>
+
+    <p>Добавляем и редактируем два значения в хранилище</p>
+    <form class="form formAdd">
+        <div class="form__input">
+            <label for="loc-1">Вводим значение в 1 поле</label>
+            <input type="text" name="inputOne">
+        </div>
+        <div class="form__input">
+            <label for="loc-2">Вводим значение в 2 поле</label>
+            <input type="text" name="inputTwo">
+        </div>
+        <button type="submit">Добавить в хранилище</button>
+    </form>    
+
+    <script src="index.js" deffer></script>
+
+</body>
+
+</html>
