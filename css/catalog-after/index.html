@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Использование псевдоэлементов ::before и ::after в построении UI</title>
+</head>
+
+<body>
+
+    <h1>Использование псевдоэлементов ::before и ::after в построении UI</h1>
+    <div class="page">
+        <div class="menu">
+            <ul class="menu__ul">
+                <li class="menu__li menu__li_catalog">
+                    <a href="/" class="menu__link menu__link_catalog">Каталог</a>
+                </li>
+                <li class="menu__li ">
+                    <a href="" class="menu__link menu__link_promo">Раздел-1</a>
+                </li>
+                <li class="menu__li">
+                    <a href="" class="menu__link">Раздел-1</a>
+                </li>
+                <li class="menu__li">
+                    <a href="" class="menu__link">Раздел-1</a>
+                </li>
+                <li class="menu__li">
+                    <a href="" class="menu__link">Раздел-1</a>
+                </li>
+                <li class="menu__li">
+                    <a href="" class="menu__link">Раздел-1</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="oldprice">
+            <h2>В карточке товара перечеркиваем цену</h2>
+            <p class="oldprice__p oldprice__p_line ">11 999р.</p>
+            <p class="oldprice__p oldprice__p_diagonal">11 999р.</p>
+            <p class="oldprice__p oldprice__p_under">11 999р.</p>
+            <p class="oldprice__p oldprice__p_diagonal oldprice__p_under">11 999р.</p>
+        </div>
+
+        <div class="oldprice">
+            <h2>Используем как элемент для hover</h2>
+            <p>Изменяя высоту строки регулируем положение подчеркивания</p>
+            <p class="oldprice__p oldprice__p_hover oldprice__p_cursor">11 999р.</p>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
